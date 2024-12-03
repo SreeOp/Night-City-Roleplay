@@ -12,7 +12,7 @@ module.exports = {
   async execute(interaction) {
     const role = interaction.options.getRole('mentionrole');
     const gifUrl = 'https://media.discordapp.net/attachments/1188478795850723479/1313138604217995275/standard_1.gif?ex=674f0b20&is=674db9a0&hm=6972ac3b666f4445d0188254c2a6a0d0d5b8a945e87c3dea3d1c557a022e585c&=&width=374&height=48'; // Replace with your GIF URL
-    const thumbnailUrl = 'https://cdn.discordapp.com/attachments/1188478795850723479/1313144878796115978/nrp1.png?ex=674f10f8&is=674dbf78&hm=fd1edfbcef3fc8c9c613bcf98c2a09f105a6497bee5040fd45424cdd906470b9&';
+    const thumbnailUrl = 'https://i.ibb.co/Nmhr5jb/nrp1.png';
 
     const embed = new EmbedBuilder()
       .setTitle('Server Restarted')
