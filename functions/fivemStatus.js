@@ -57,8 +57,9 @@ module.exports = (client) => {
                             { name: 'Restart Times', value: '```6:30 PM```', inline: true }
                         )
                         .setAuthor({ name: 'Night City | Server Status', iconURL: guild.iconURL() })
-                        .setImage('https://discor                      .setFooter({ text: `Night City | Last Updated at ${currentTime}`, iconURL: client.user.displayAvatarURL() });
-
+                        .setImage('https://r2.fivemanage.com/pub/8drfou30xp4e.gif')
+                        .setFooter({ text: `Night City | Last Updated at ${currentTime}`, iconURL: client.user.displayAvatarURL() });
+                    
                     const livePlayerNames = playersData
                         .sort((a, b) => a.id - b.id)
                         .map(player => `[${player.id}] ${player.name}\n`);
