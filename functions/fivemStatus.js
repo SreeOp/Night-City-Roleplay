@@ -1,8 +1,10 @@
+const Discord = require('discord.js');
+const axios = require('axios');
 const moment = require('moment-timezone');
-const IP = "143.244.135.94:30120";
-const Channel_id = "1296783788202004532";
-const Message_id = "1313325872916463658";
-const Guild_id = "1120436484806287493";
+const IP = "";
+const Channel_id = "";
+const Message_id = "";
+const Guild_id = "";
 const color_filter = [
     "^0",
     "^1",
@@ -57,9 +59,9 @@ module.exports = (client) => {
                             { name: 'Restart Times', value: '```6:30 PM```', inline: true }
                         )
                         .setAuthor({ name: 'Night City | Server Status', iconURL: guild.iconURL() })
-                        .setImage('https://r2.fivemanage.com/pub/8drfou30xp4e.gif')
+                        .setImage('PASTE URL')
                         .setFooter({ text: `Night City | Last Updated at ${currentTime}`, iconURL: client.user.displayAvatarURL() });
-                    
+
                     const livePlayerNames = playersData
                         .sort((a, b) => a.id - b.id)
                         .map(player => `[${player.id}] ${player.name}\n`);
@@ -99,4 +101,3 @@ module.exports = (client) => {
         }
     }
 };
-
