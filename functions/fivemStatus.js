@@ -52,7 +52,7 @@ module.exports = (client) => {
 
                     const embed = new Discord.EmbedBuilder()
                         .setColor('Purple')
-                        .setDescription('**Server Name**\n```Night City```\n**How to join the server?**\nYou can join the server **Night City** using our IP: ```connect play.nightcity.test```. Live server status can be tracked below!!')
+                        .setDescription('**Server Name**\n```Night City```\n**How to join the server?**\nYou can join the server **Night City** using our IP: ```connect cfx.re/join/zezqod```. Live server status can be tracked below!!')
                         .addFields(
                             { name: 'Server Status', value: '```Online ✅```', inline: true },
                             { name: 'Online Players', value: `\`\`\`${dynamicData.clients}/${dynamicData.sv_maxclients}\`\`\``, inline: true },
