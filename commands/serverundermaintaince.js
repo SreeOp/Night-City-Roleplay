@@ -16,7 +16,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setTitle('Server Under Maintenance')
-      .setDescription('Server Under Maintenance, Please Wait Until Message In https://discord.com/channels/754291343551102976/1049323612894674995')
+      .setDescription('Server Under Maintenance, Please Wait Until Message In https://discord.com/channels/1120436484806287493/1125466524690415636')
       .setImage(gifUrl)
       .setThumbnail(thumbnailUrl)
       .setFooter({ text: 'NRP DEVELOPER TEAM' })
