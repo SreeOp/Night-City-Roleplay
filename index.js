@@ -7,7 +7,7 @@ require('dotenv').config(); // Load environment variables
 
 // Import the setStatus function, warScheduler, welcome function, cfxStatus function, and voiceLogger
 
-//const fivemStatus = require('./functions/fivemStatus');
+const fivemStatus = require('./functions/fivemStatus');
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildVoiceStates] }); // Include GuildVoiceStates intent
@@ -35,7 +35,7 @@ client.once('ready', () => {
   console.log(`Logged in as ${client.user.tag}`);
   
   // Fivem Status
-  //fivemStatus(client);
+  fivemStatus(client);
 
 });
 
