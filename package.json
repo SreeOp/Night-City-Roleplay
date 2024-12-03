@@ -1,0 +1,31 @@
+{
+  "name": "nrp-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot with various features.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "discord.js"
+  ],
+  "author": "zyronix",
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.25",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "moment-timezone": "^0.5.44",
+    "node-cron": "^3.0.2",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
