@@ -11,7 +11,7 @@ module.exports = {
     ),
   async execute(interaction) {
     const role = interaction.options.getRole('mentionrole');
-    const gifUrl = 'https://cdn.discordapp.com/attachments/1188478795850723479/1313138560043319377/standard.gif?ex=674f0b15&is=674db995&hm=26b18f5fc0cf5bc5867f8aef1b09d9764f8bdbf96e2a7c16aaab99263e69c29f&'; // Replace with your GIF URL
+    const gifUrl = 'https://imgur.com/Im6jIwk'; // Replace with your GIF URL
     const thumbnailUrl = 'https://i.ibb.co/Nmhr5jb/nrp1.png';
 
     const embed = new EmbedBuilder()
