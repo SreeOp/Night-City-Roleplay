@@ -16,7 +16,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setTitle('Server Restarted')
-      .setDescription('Server Has Been Restarted , Enjoy Roleplaying , If You Facing Any Issue Feel Free To Contact Nrp Team > Connect Through City Ip https://discord.com/channels/754291343551102976/1219606065382031370 ')
+      .setDescription('Server Has Been Restarted , Enjoy Roleplaying , If You Facing Any Issue Feel Free To Contact Nrp Team > Connect Through City Ip https://discord.com/channels/1120436484806287493/1296783788202004532 ')
       .setImage(gifUrl)
       .setThumbnail(thumbnailUrl)
       .setFooter({ text: 'NRP DEVELOPER TEAM' })
