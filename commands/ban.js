@@ -29,7 +29,7 @@ module.exports = {
         const reason = interaction.options.getString('reason');
 
         // Hardcoded channel ID and image URL
-        const channelId = '1314202624060297338'; // Replace with the channel ID
+        const channelId = '1125482426295132181'; // Replace with the channel ID
         const imageUrl = 'https://r2.fivemanage.com/M8ZRs0ZKRHQNYpT5YIztc/SCTFORu.gif'; // Replace with the URL of your image
 
         // Validate period format (e.g., "2days")
