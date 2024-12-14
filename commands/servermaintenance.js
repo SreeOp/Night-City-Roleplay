@@ -4,14 +4,11 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('servermain')
         .setDescription('Announces server maintenance.'),
-    permissions: [
-        process.env.ADMIN_ROLE,
-        process.env.MODERATOR_ROLE
-    ],
+    
     async execute(interaction) {
         // Hardcoded role ID and channel ID
-        const roleId = '1312735645260845066'; // Replace with the role ID to mention
-        const channelId = '1314199196756349020'; // Replace with the channel ID to send the message
+        const roleId = '1125844474602471506'; // Replace with the role ID to mention
+        const channelId = '1125466524690415636'; // Replace with the channel ID to send the message
 
         // Fetch the role from the guild
         const role = interaction.guild.roles.cache.get(roleId);
