@@ -35,7 +35,7 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setTitle('Server Under Maintenance')
             .setDescription('Server is Currently Down For Maintenance, Please Wait.')
-            .setThumbnail('https://cdn.discordapp.com/attachments/1312311823650918463/1312740429158158396/nodejs.png?ex=6752de4b&is=67518ccb&hm=340fa4551a9796e280ec5de98b1c446edaeee47fdfcd4148db2e91e5f877613f&') // Replace with the thumbnail URL
+            .setThumbnail('https://i.ibb.co/Nmhr5jb/nrp1.png') // Replace with the thumbnail URL
             .setImage('https://cdn.discordapp.com/attachments/1312311823650918463/1312740429158158396/nodejs.png?ex=6752de4b&is=67518ccb&hm=340fa4551a9796e280ec5de98b1c446edaeee47fdfcd4148db2e91e5f877613f&') // Replace with the GIF URL
             .setFooter({
                 text: 'Nrp Developer Team',
