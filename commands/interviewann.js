@@ -5,11 +5,11 @@ module.exports = {
         .setName('interviewannounce')
         .setDescription('Announces the start of the whitelist interview section.'),
     async execute(interaction) {
-        // Define the role IDs allowed to use this command
-        const allowedRoles = ['1307225215255707719']; // Replace with your staff role ID(s)
+        // Define the role IDs allowed to use the command
+        const AllowedRoleIDs = ['1307225215255707719'];
 
         // Check if the user has one of the allowed roles
-        const hasRole = interaction.member.roles.cache.some(role => allowedRoles.includes(role.id));
+        const hasRole = interaction.member.roles.cache.some(role => AllowedRoleIDs.includes(role.id));
 
         if (!hasRole) {
             return interaction.reply({
