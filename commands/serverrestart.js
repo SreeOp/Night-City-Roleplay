@@ -11,7 +11,7 @@ module.exports = {
     ),
   async execute(interaction) {
     const role = interaction.options.getRole('mentionrole');
-    const gifUrl = 'https://r2.fivemanage.com/pub/e1ozrotiwd6p.gif'; // Replace with your GIF URL
+    const gifUrl = 'https://r2.fivemanage.com/M8ZRs0ZKRHQNYpT5YIztc/standard_1.gif'; // Replace with your GIF URL
     const thumbnailUrl = 'https://i.ibb.co/Nmhr5jb/nrp1.png';
 
     const embed = new EmbedBuilder()
