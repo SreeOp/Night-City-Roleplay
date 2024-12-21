@@ -25,8 +25,8 @@ module.exports = {
   async execute(interaction) {
     const user = interaction.options.getUser('user');
 
-    const serverIP = 'YOUR_SERVER_IP'; // Replace with your FiveM server IP
-    const serverPort = 'YOUR_SERVER_PORT'; // Replace with your FiveM server Port
+    const serverIP = '139.59.75.7'; // Replace with your FiveM server IP
+    const serverPort = '30120'; // Replace with your FiveM server Port
 
     try {
       // Call FiveM API to get player info
