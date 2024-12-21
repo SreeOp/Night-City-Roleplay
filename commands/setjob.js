@@ -24,7 +24,7 @@ module.exports = {
         .setRequired(true)),
   async execute(interaction) {
     // Only specific roles can use this command
-    const allowedRoleIds = ['ROLE1', 'ROLE2']; // Replace with your actual role IDs 
+    const allowedRoleIds = ['1130550721834647622', '1143387729577660487']; // Replace with your actual role IDs 
     const memberRoles = interaction.member.roles.cache;
     const hasPermission = allowedRoleIds.some(role => memberRoles.has(role));
 
