@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 const axios = require('axios');
 
-const ip = 'SERVER_IP:PORT'; // Replace with  FiveM server's IP and port
+const ip = '139.59.75.7:30120'; // Replace with  FiveM server's IP and port
 const color_filter = [
     "^0", "^1", "^2", "^3", "^4", "^5", "^6", "^7", "^8", "^9"
 ];
