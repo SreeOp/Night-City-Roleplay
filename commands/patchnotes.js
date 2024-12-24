@@ -24,8 +24,8 @@ module.exports = {
         ),
     async execute(interaction) {
         // Hardcoded settings
-        const imageUrl = 'https://r2.fivemanage.com/M8ZRs0ZKRHQNYpT5YIztc/SCTFORu.gif'; // Replace with your image URL
-        const roleId = '1317411421566406706'; // Replace with your role ID
+        const imageUrl = 'https://i.ibb.co/xYzNWqC/Patch-Note.webp'; // Replace with your image URL
+        const roleId = '1125844474602471506'; // Replace with your role ID
 
         // Get user inputs
         const title = interaction.options.getString('title');
