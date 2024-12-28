@@ -35,7 +35,7 @@ module.exports = (client) => {
 
     // Add username text
     ctx.fillStyle = 'white';
-    ctx.font = '40px Arial'; // Adjust font size to fit the design
+    ctx.font = '30px Arial'; // Adjust font size to fit the design
     ctx.fillText(username, 140, 340); // Adjusted position for the username
 
     // Create an image attachment
