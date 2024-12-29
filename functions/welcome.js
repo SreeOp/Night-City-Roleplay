@@ -11,7 +11,7 @@ module.exports = (client) => {
     const ctx = frame.getContext('2d');
 
     // Load the background image
-    const bg = await canvas.loadImage('https://i.ibb.co/KwLHrp1/welcome-image.png');
+    const bg = await canvas.loadImage('https://i.ibb.co/r5T1N3d/BANNER-0-0.png');
     ctx.drawImage(bg, 0, 0, frame.width, frame.height);
 
     // Member username and avatar
