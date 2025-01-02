@@ -6,10 +6,17 @@ const {
 } = require('discord.js');
 
 const SUPPORT_ROLES = {
-  general_support: '1125488896088735816', // Replace with actual role ID for General Support
-  frp: '1125487262289899590', // Replace with actual role ID for FRP
-  items_loss: '1130550721834647622', // Replace with actual role ID for Items Loss
-  premium: '1321813673173323897', // Replace with actual role ID for Premium
+  general_support: '1321158835272028282', // Replace with the role ID for General Support
+  frp: '1125487262289899590', // Replace with the role ID for FRP
+  items_loss: '1130550721834647622', // Replace with the role ID for Items Loss
+  premium: '1321813673173323897', // Replace with the role ID for Premium
+};
+
+const TICKET_CATEGORIES = {
+  general_support: '1321811895144943688', // Replace with the category ID for General Support
+  frp: '1321811978913579048', // Replace with the category ID for FRP
+  items_loss: '1324388265029009458', // Replace with the category ID for Items Loss
+  premium: '1321812020185534465', // Replace with the category ID for Premium
 };
 
 module.exports = async (client) => {
@@ -18,15 +25,16 @@ module.exports = async (client) => {
 
     const selectedCategory = interaction.values[0];
     const roleId = SUPPORT_ROLES[selectedCategory];
+    const categoryId = TICKET_CATEGORIES[selectedCategory];
 
-    if (!roleId) {
+    if (!roleId || !categoryId) {
       return interaction.reply({
         content: 'Invalid category selected.',
         ephemeral: true,
       });
     }
 
-    // Create a new channel for the ticket
+    // Create a new channel for the ticket within the specified category
     const ticketChannelName = `ticket-${interaction.user.username}-${selectedCategory}`;
     const guild = interaction.guild;
 
@@ -34,6 +42,7 @@ module.exports = async (client) => {
       const ticketChannel = await guild.channels.create({
         name: ticketChannelName,
         type: 0, // Guild text channel
+        parent: categoryId, // Assign the ticket to the appropriate category
         permissionOverwrites: [
           {
             id: guild.id, // @everyone
@@ -52,7 +61,7 @@ module.exports = async (client) => {
 
       // Send the ticket creation confirmation message
       const embed = new EmbedBuilder()
-        .setColor('#53098C')
+        .setColor('#FF4500')
         .setTitle('Ticket Created')
         .setDescription(
           `Hello <@${interaction.user.id}>, your ticket has been created. A member of the <@&${roleId}> team will assist you shortly.`
@@ -119,7 +128,7 @@ module.exports = async (client) => {
       const ticketChannel = interaction.channel;
 
       // Save the transcript to a channel
-      const transcriptChannelId = '1321811320386883634'; // Replace with the ID of the transcript channel
+      const transcriptChannelId = 'TRANSCRIPT_CHANNEL_ID'; // Replace with the ID of the transcript channel
       const transcriptChannel = interaction.guild.channels.cache.get(transcriptChannelId);
 
       if (transcriptChannel) {
