@@ -128,7 +128,7 @@ module.exports = async (client) => {
       const ticketChannel = interaction.channel;
 
       // Save the transcript to a channel
-      const transcriptChannelId = 'TRANSCRIPT_CHANNEL_ID'; // Replace with the ID of the transcript channel
+      const transcriptChannelId = '1321811320386883634'; // Replace with the ID of the transcript channel
       const transcriptChannel = interaction.guild.channels.cache.get(transcriptChannelId);
 
       if (transcriptChannel) {
