@@ -61,7 +61,7 @@ module.exports = async (client) => {
 
       // Send the ticket creation confirmation message
       const embed = new EmbedBuilder()
-        .setColor('#FF4500')
+        .setColor('#4F0D81')
         .setTitle('Ticket Created')
         .setDescription(
           `Hello <@${interaction.user.id}>, your ticket has been created. A member of the <@&${roleId}> team will assist you shortly.`
@@ -98,7 +98,7 @@ module.exports = async (client) => {
 
     // Ask for confirmation to close
     const confirmationEmbed = new EmbedBuilder()
-      .setColor('#FF4500')
+      .setColor('#4F0D81')
       .setTitle('Confirm Ticket Closure')
       .setDescription('Are you sure you want to close this ticket?');
 
@@ -142,7 +142,7 @@ module.exports = async (client) => {
           .join('\n');
 
         const transcriptEmbed = new EmbedBuilder()
-          .setColor('#FF4500')
+          .setColor('#4F0D81')
           .setTitle(`Transcript for ${ticketChannel.name}`)
           .setDescription('Saved messages from this ticket.')
           .setFooter({ text: 'NRP Admin' });
