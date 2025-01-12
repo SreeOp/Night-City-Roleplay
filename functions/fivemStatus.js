@@ -59,7 +59,7 @@ module.exports = (client) => {
                             { name: 'Restart Times', value: '```6:30 PM```', inline: true }
                         )
                         .setAuthor({ name: 'Night City | Server Status', iconURL: guild.iconURL() })
-                        .setImage('https://r2.fivemanage.com/M8ZRs0ZKRHQNYpT5YIztc/SCTFORu.gif')
+                        .setImage('https://r2.fivemanage.com/M8ZRs0ZKRHQNYpT5YIztc/images/dav_1-1.gif')
                         .setFooter({ text: `Night City | Last Updated at ${currentTime}`, iconURL: client.user.displayAvatarURL() });
 
                     const livePlayerNames = playersData
