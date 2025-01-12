@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const axios = require('axios');
 const moment = require('moment-timezone');
-const IP = "139.59.75.7:30120";
+const IP = "139.59.75.7:51245";
 const Channel_id = "1296783788202004532";
 const Message_id = "1313325872916463658";
 const Guild_id = "1120436484806287493";
@@ -52,7 +52,7 @@ module.exports = (client) => {
 
                     const embed = new Discord.EmbedBuilder()
                         .setColor('Purple')
-                        .setDescription('**Server Name**\n```Night City```\n**How to join the server?**\nYou can join the server **Night City** using our IP: ```connect cfx.re/join/p9bava```. Live server status can be tracked below!!')
+                        .setDescription('**Server Name**\n```Night City```\n**How to join the server?**\nYou can join the server **Night City** using our IP: ```connect nrp.coreplex.in```. Live server status can be tracked below!!')
                         .addFields(
                             { name: 'Server Status', value: '```Online ✅```', inline: true },
                             { name: 'Online Players', value: `\`\`\`${dynamicData.clients}/${dynamicData.sv_maxclients}\`\`\``, inline: true },
